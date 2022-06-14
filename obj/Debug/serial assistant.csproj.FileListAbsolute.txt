@@ -1,0 +1,28 @@
+D:\上位机开发\serialport\serial assistant\serial assistant\obj\Debug\serial assistant.csproj.AssemblyReference.cache
+D:\上位机开发\serialport\serial assistant\serial assistant\obj\Debug\MainWindow.g.cs
+D:\上位机开发\serialport\serial assistant\serial assistant\obj\Debug\App.g.cs
+D:\上位机开发\serialport\serial assistant\serial assistant\obj\Debug\serial assistant_MarkupCompile.cache
+D:\上位机开发\serialport\serial assistant\serial assistant\obj\Debug\serial assistant_MarkupCompile.lref
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\serial assistant.exe.config
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\serial assistant.exe
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\serial assistant.pdb
+D:\上位机开发\serialport\serial assistant\serial assistant\obj\Debug\MainWindow.baml
+D:\上位机开发\serialport\serial assistant\serial assistant\obj\Debug\serial assistant.g.resources
+D:\上位机开发\serialport\serial assistant\serial assistant\obj\Debug\serial_assistant.Properties.Resources.resources
+D:\上位机开发\serialport\serial assistant\serial assistant\obj\Debug\serial assistant.csproj.GenerateResource.cache
+D:\上位机开发\serialport\serial assistant\serial assistant\obj\Debug\serial assistant.csproj.CoreCompileInputs.cache
+D:\上位机开发\serialport\serial assistant\serial assistant\obj\Debug\serial assistant.exe
+D:\上位机开发\serialport\serial assistant\serial assistant\obj\Debug\serial assistant.pdb
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\System.IO.Ports.dll
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\System.IO.Ports.xml
+D:\上位机开发\serialport\serial assistant\serial assistant\obj\Debug\serial assistant.csproj.CopyComplete
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\System.Buffers.dll
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\System.Memory.dll
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\System.Numerics.Vectors.dll
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\System.Text.Encoding.CodePages.dll
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\System.Buffers.xml
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\System.Memory.xml
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\System.Numerics.Vectors.xml
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\上位机开发\serialport\serial assistant\serial assistant\bin\Debug\System.Text.Encoding.CodePages.xml
