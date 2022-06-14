@@ -8,7 +8,7 @@ using System.Windows.Threading;
 
 namespace serial_assistant
 {
-    class Serial_Timer
+    public partial class MainWindow : Window
     {
         /// <summary>
         /// 用于更新时间的定时器
@@ -48,6 +48,31 @@ namespace serial_assistant
         {
             autoSendDataTimer.IsEnabled = false;
             autoSendDataTimer.Stop();
+        }
+        private int GetAutoSendDataInterval()
+        {
+            int interval = 1000;
+
+            if (int.TryParse(autoSendIntervalTextBox.Text.Trim(), out interval) == true)
+            {
+                string select = timeUnitComboBox.Text.Trim();
+
+                switch (select)
+                {
+                    case "毫秒":
+                        break;
+                    case "秒钟":
+                        interval *= 1000;
+                        break;
+                    case "分钟":
+                        interval = interval * 60 * 1000;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            return interval;
         }
     }
 }

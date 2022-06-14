@@ -20,30 +20,22 @@ namespace serial_assistant
     /// </summary>
     public partial class MainWindow : Window
     {
-        private SerialPort  serialPort;
 
         public MainWindow()
         {
             InitializeComponent();
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+
             // 初始化可用的串口列表
             InitializeSerialPortList();
+
+            InitClockTimer();
+            InitAutoSendDataTimer();
+
         }
 
-        /// <summary>
-        /// 初始化当前机器上可用的串口列表并添加到串口的下拉列表框中
-        /// </summary>
-        /// <exception cref="NotImplementedException"></exception>
-        private void InitializeSerialPortList()
-        {
-            // 获取本机串口的数组
-            var portsList = SerialPort.GetPortNames();
-            //绑定到串口对应下拉列表框中
-            cbPort.ItemsSource = portsList;
-            // 选择列表中第一个项
-            cbPort.SelectedIndex = 0;
-            cbPort.Text = portsList[0];
-        }
 
+        /*
         /// <summary>
         /// <summary>
         /// 定义打开串口的事件
@@ -130,7 +122,7 @@ namespace serial_assistant
 
             return flag;
         }
-        
+
         /// <summary>
         /// 串口数据的自动接收数据的事件方法逻辑
         /// </summary>
@@ -164,7 +156,7 @@ namespace serial_assistant
             try
             {
                 //获取文本框中发送的数据
-                var datas = Encoding.Default.GetBytes(txtSend.Text);
+                var datas = Encoding.Default.GetBytes(sendDataTextBox.Text);
                 //向指定串口写入数据
                 serialPort.Write(datas, 0, datas.Length);
             }
@@ -174,6 +166,7 @@ namespace serial_assistant
                 throw;
             }
         }
+                */
         /// <summary>
         /// 消息清空事件
         /// </summary>
@@ -193,5 +186,27 @@ namespace serial_assistant
             }
         }
 
+        /// <summary>
+        /// 更新时间信息
+        /// </summary>
+        private void UpdateTimeDate()
+        {
+            string timeDateString = "";
+            DateTime now = DateTime.Now;
+            timeDateString = string.Format("{0}年{1}月{2}日 {3}:{4}:{5}",
+                now.Year,
+                now.Month.ToString("00"),
+                now.Day.ToString("00"),
+                now.Hour.ToString("00"),
+                now.Minute.ToString("00"),
+                now.Second.ToString("00"));
+
+            //timeDateTextBlock.Text = timeDateString;
+        }
+
+        private void recvDataRichTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
